@@ -35,8 +35,10 @@
                         (interactive)
                         (find-file file-path))))))
 
+;;;###autoload
 (define-minor-mode speed-dial-mode
   "Activates speed-dial-mode"
+  :global t
   :keymap speed-dial-keymap)
 
 (provide 'speed-dial)
